@@ -1,0 +1,256 @@
+#include<stdio.h>
+#include<windows.h>
+
+int Phon,Ref;
+double Amot;
+void cover_page()
+{
+    system("color 5f");
+    printf("\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*\n"); // (
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*\n");
+    printf("\t\t\t*^*\t\t\t\t\t\t\t\t*^*\n");
+    printf("\t\t\t*^*\t\t      Welcome to My Project \t\t\t*^*\n");
+    printf("\t\t\t*^*\t\t\t\t\t\t\t\t*^*\n");                                                  // project name
+    printf("\t\t\t*^*\t\t\t PROJECT PRAGATI    \t\t\t*^*\n");
+    printf("\t\t\t*^*\t\t\t\t\t\t\t\t*^*\n");
+    printf("\t\t\t*^*\t\t\t\t\t\t\t\t*^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*\n\n");
+
+
+    }
+
+    void loop()
+{
+    while(1)
+    {
+        int input;
+        printf("\n\n\t\t----------------------------------------------------------------------------------\n");
+        printf("\n\t\t\tPress 1 for Continue and Press 0 for EXIT : ");
+        scanf("%d",&input);
+        system("cls"); //clear screen
+        if(input==0)
+        {
+            printf("\n\n\n\n\n\n\n\n\n\n\t\t\t\t\t\tProcessing successful. \n\n\t\t\t\t\t\t      Thank You");
+                break;
+        }
+        else if(input==1)
+        {
+            feature();
+        }
+        else
+        {
+            //system("color 04");
+            printf("\n\n\t\t\t\t\tInput Error Please Try Again.\n");
+            // getch();
+            //  system("color 0A");
+        }
+    }
+}
+
+int feature()
+{
+    printf("\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                   Carrier info                         ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^ Pragati                                                ^*\n");
+    //printf("\t\t\t*^                                                        ^*\n");          Menu
+    printf("\t\t\t*^ 1.Send Money                                           ^*\n");
+    printf("\t\t\t*^ 2.Send Money to Non-Pragati User                       ^*\n");
+    printf("\t\t\t*^ 3.Mobile Recharge                                      ^*\n");
+    printf("\t\t\t*^ 4.Payment                                              ^*\n");
+    printf("\t\t\t*^ 5.Cash Out                                             ^*\n");
+    printf("\t\t\t*^ 6.Pay Bill                                             ^*\n");
+    printf("\t\t\t*^ 7.NGO Payment                                          ^*\n");
+    printf("\t\t\t*^ 8.Download App                                         ^*\n");
+//    printf("\t\t\t*^ 9.Help Line                                            ^*\n");
+//    printf("\t\t\t*^ 10.Reset Pin                                           ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t");
+    printf("Make a choice : ");
+    int featureChoice;
+
+    scanf("%d",&featureChoice);
+    system("cls"); //clear screen
+    if(featureChoice==1){
+        send_money();
+    }
+    else if(featureChoice==2){
+        send_money();
+    }
+    else if(featureChoice==3){
+        mobile_recharge();
+    }
+    else if(featureChoice==4){
+        recharge();
+    }
+    else if(featureChoice==5){
+        recharge();
+    }
+    else if(featureChoice==6){
+        recharge();
+    }
+    else if(featureChoice==7){
+        recharge();
+    }
+    else if(featureChoice==7){
+        recharge();
+    }
+    else if(featureChoice==8){
+        link();
+    }
+    else{
+        loop();
+    }
+
+}
+
+void send_money()
+{
+    printf("\n\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    //printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                       PRAGATI                          ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    //printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    int phone_number;
+    printf("\t\t\tEnter Reciver phone number : ");
+
+    scanf("%d",&phone_number);
+    Phon=phone_number;
+    system("cls"); //clear screen
+    amount();
+}
+
+void recharge()
+{
+    printf("\n\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    //printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                       PRAGATI                          ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    //printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    int phone_number;
+    printf("\t\t\tEnter phone number : ");
+
+    scanf("%d",&phone_number);
+    Phon=phone_number;
+    system("cls"); //clear screen
+    amount();
+}
+
+void amount()
+{
+    printf("\n\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                       PRAGATI                          ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    double Amount;
+    printf("\t\t\tEnter Amount : ");
+
+    scanf("%lf",&Amount);
+    Amot=Amount;
+    system("cls"); //clear screen
+    reference();
+}
+
+void reference()
+{
+    printf("\n\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                       PRAGATI                          ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    char Reference[1000];
+    printf("\t\t\tEnter Reference : ");
+
+    scanf("%s",&Reference);
+    Ref=Reference;
+    system("cls"); //clear screen
+    pin();
+}
+
+void pin()
+{
+    printf("\n\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                       PRAGATI                          ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    int Pin;
+    printf("\t\t\tSend Money to : %d\n",Phon);
+    printf("\t\t\tAmount : %0.2lf Taka\n",Amot);
+    printf("\t\t\tReference : %s\n",Ref);
+    printf("\t\t\tEnter Menu PIN to confirm : ");
+    scanf("%d",&Pin);
+    system("cls"); //clear screen
+    success();
+
+}
+
+void success()
+{
+    printf("\n\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                       PRAGATI                          ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^         Your Money Transaction is Successful !         ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    loop();
+}
+
+void link()
+{
+    printf("\n\n\n\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                       PRAGATI                          ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\n\t\t\tEnjoy add money, Loan Savings, Reward and\n\t\t\tmoney exclusive features . TCA ! Download \n\t\t\tPragati App : http://pra.gati//aoussd\n");
+    loop();
+}
+
+void mobile_recharge()
+{
+    printf("\n\n\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^                   Carrier info                         ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^ Pragati                                                ^*\n");
+    //printf("\t\t\t*^                                                        ^*\n");          Menu
+    printf("\t\t\t*^ 1.Robi                                                 ^*\n");
+    printf("\t\t\t*^ 2.Airtel                                               ^*\n");
+    printf("\t\t\t*^ 3.Banglalink                                           ^*\n");
+    printf("\t\t\t*^ 4.Grameenphone                                         ^*\n");
+    printf("\t\t\t*^ 5.Teletalk                                             ^*\n");
+    printf("\t\t\t*^                                                        ^*\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^\n");
+    printf("\t\t\t");
+    printf("Make a choice : ");
+    int f;
+    scanf("%d",&f);
+    system("cls"); //clear screen
+    send_money();
+}
+
+
+
+
+ int main()
+ {
+     cover_page();
+     loop();
+     return 0;
+ }
